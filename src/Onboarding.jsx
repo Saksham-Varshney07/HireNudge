@@ -134,7 +134,8 @@ const Onboarding = ({ onHome, initialStep = 0, savedOnlyMode = false, appliedOnl
          location: targetLocations.length > 0 ? targetLocations.join(', ') : "United States"
       };
 
-      const apiUrl = import.meta.env.PROD ? '/api/jobs' : 'http://localhost:8000/api/jobs';
+      const baseUrl = import.meta.env.VITE_API_URL || (import.meta.env.PROD ? 'https://hirenudge-backend.onrender.com' : 'http://localhost:8000');
+      const apiUrl = `${baseUrl}/api/jobs`;
       const jobsResponse = await fetch(apiUrl, {
          method: 'POST',
          headers: { 'Content-Type': 'application/json' },
