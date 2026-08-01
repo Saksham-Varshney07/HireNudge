@@ -134,7 +134,8 @@ const Onboarding = ({ onHome, initialStep = 0, savedOnlyMode = false, appliedOnl
          location: targetLocations.length > 0 ? targetLocations.join(', ') : "United States"
       };
 
-      const jobsResponse = await fetch('http://localhost:8000/api/jobs', {
+      const apiUrl = import.meta.env.PROD ? '/api/jobs' : 'http://localhost:8000/api/jobs';
+      const jobsResponse = await fetch(apiUrl, {
          method: 'POST',
          headers: { 'Content-Type': 'application/json' },
          body: JSON.stringify(requestBody)
