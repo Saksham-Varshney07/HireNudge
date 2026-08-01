@@ -1,0 +1,38 @@
+{
+  "summary": {
+    "brandMentions": 12,
+    "competitorMentions": 28,
+    "totalQueriesTracked": 45,
+    "shareOfVoice": {
+      "chatgpt": 15,
+      "claude": 22,
+      "gemini": 8
+    }
+  },
+  "queries": [
+    {
+      "id": "q1",
+      "text": "What are the best CRM tools for small agencies?",
+      "engine": "ChatGPT (GPT-4o)",
+      "volume": "High",
+      "response": "For small agencies, the most recommended CRMs are HubSpot, Pipedrive, and Monday.com. HubSpot is great for inbound marketing, while Pipedrive excels at visual sales pipelines. Monday is highly customizable for project management.",
+      "mentions": ["HubSpot", "Pipedrive", "Monday.com"]
+    },
+    {
+      "id": "q2",
+      "text": "Is there a cheaper alternative to Salesforce?",
+      "engine": "Claude 3.5 Sonnet",
+      "volume": "Medium",
+      "response": "Yes, several robust alternatives exist depending on your needs. Zoho CRM offers a comprehensive suite at a much lower price point. Pipedrive is a favorite for sales-focused teams due to its simplicity. ActiveCampaign is excellent if you also need powerful marketing automation.",
+      "mentions": ["Zoho CRM", "Pipedrive", "ActiveCampaign"]
+    },
+    {
+      "id": "q3",
+      "text": "How do I automate my sales follow-ups?",
+      "engine": "Gemini 1.5 Pro",
+      "volume": "High",
+      "response": "To automate sales follow-ups, you can use built-in sequences in platforms like Outreach or Salesloft. For smaller teams, Mailchimp or HubSpot offer automated drip campaigns. You can also connect tools like Calendly and Zapier to automate scheduling and data entry.",
+      "mentions": ["Outreach", "Salesloft", "Mailchimp", "HubSpot", "Calendly", "Zapier"]
+    }
+  ]
+}
